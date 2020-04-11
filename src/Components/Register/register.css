@@ -11,22 +11,25 @@
   align-items: center;
   margin-top: 100px;
 }
+
 h1{
   font-family: 'roboto';
   color:#FFF
 }
+
 input {
 width: 270px;
 height: 32px;
 background: #FAFAFA;
-border: none;
+border-radius: 5px;
 margin-top: 18px;
 }
+
 button {
 width: 269px;
 height: 44px;
 background: #FFEB39;
-border: none;
+border-radius: 5px;
 font-family: 'Roboto', sans-serif;
 font-weight: 700;
 font-size: 16px;
@@ -53,7 +56,12 @@ a:hover {
   color: #fff;
   text-decoration: underline;
 }
+
 p{
   color:#fff;
   font-family: 'roboto';
+}
+
+.register-register, .forgot-register {
+  text-decoration: none;
 }
