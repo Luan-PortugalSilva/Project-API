@@ -11,7 +11,7 @@ export default Forgot => {
             <p class='text-footer'>
 WE WILL SEND AN SENT AN E-MAIL WITH THE LINK TO RECOVER YOUR PASSWORD</p>
             <div className="container-flex">
-                <p><a href="/register" className="register-login">Login</a></p>
+                <p><a href="/" className="register-login">Login</a></p>
             </div>
 
         </div>
