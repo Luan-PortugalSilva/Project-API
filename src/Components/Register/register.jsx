@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import { Container, ContainerFlex } from '../../Styles/register.jsx'
 
 class Register extends Component {
