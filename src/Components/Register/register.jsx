@@ -1,21 +1,25 @@
-import React from 'react';
-import './register.css'
+import React, { Component } from 'react';
 
-export default Register => {
-    return (
-        <div className="background">
-            <h1>SINGUP USER</h1>
-            <input className="login" placeholder="User"></input>
-            <input className="email" placeholder="E-mail"></input>
-            <input className="password" placeholder="Password"></input>
-            <input className="password" placeholder="Confirm your password"></input>
-            <button type="submit">REGISTER</button>
+import { Container, ContainerFlex } from '../../Styles/register.jsx'
 
-            <div className="container-flex">
-                <p><a href="/" className="register-register">Login</a></p>
-                <p><a href="/forgot" className="forgot-register">Forgot</a></p>
-            </div>
+class Register extends Component {
+    render() {
+        return (
+            <Container>
+                <h1>SIGNUP USER</h1>
+                <input placeholder="User"></input>
+                <input placeholder="E-mail"></input>
+                <input placeholder="Password"></input>
+                <input placeholder="Confirm your password"></input>
+                <button type="submit">REGISTER</button>
 
-        </div>
-    )
+                <ContainerFlex>
+                    <p><a href="/">Login</a></p>
+                    <p><a href="/forgot">Forgot</a></p>
+                </ContainerFlex>
+            </Container>
+        )   
+    }
 }
+
+export default Register

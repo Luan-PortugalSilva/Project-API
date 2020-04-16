@@ -1,19 +1,22 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-import '../Forgot/forgot.css'
+import { Container, ContainerFlex } from '../../Styles/forgot.jsx'
 
-export default Forgot => {
-    return (
-        <div className="container">
-            <h1>REMEMBER MY PASSWORD</h1>
-            <input className="user" placeholder="E-mail"></input>
-            <button type="submit" className="buttom-login">SEND E-MAIL</button>
-            <p class='text-footer'>
-WE WILL SEND AN SENT AN E-MAIL WITH THE LINK TO RECOVER YOUR PASSWORD</p>
-            <div className="container-flex">
-                <p><a href="/" className="register-login">Login</a></p>
-            </div>
-
-        </div>
-    )
+class Forgot extends Component {
+    render() {
+        return (
+            <Container>
+                <h1>REMEMBER MY PASSWORD</h1>
+                <input placeholder="E-mail"></input>
+                <button type="submit" >SEND E-MAIL</button>
+                <p class='text-footer'>
+                    WE WILL SEND AN SENT AN E-MAIL WITH THE LINK TO RECOVER YOUR PASSWORD</p>
+                <ContainerFlex>
+                    <p><a href="/">Login</a></p>
+                    </ContainerFlex>
+            </Container>
+        )
+    }
 }
+
+export default Forgot

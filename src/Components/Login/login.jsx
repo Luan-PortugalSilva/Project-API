@@ -1,20 +1,25 @@
-import React from 'react';
+import React, { Component } from "react";
 
-import '../Login/login.css'
+import { Container, ContainerFlex } from '../../Styles/login.jsx'
 
-export default Login => {
-    return (
-        <div className="container">
-            <h1>LOGIN</h1>
-            <input className="user" placeholder="User"></input>
-            <input className="password" placeholder="password"></input>
-            <button type="submit" className="buttom-login">LOGIN</button>
+class Login extends Component {
+    render() {
+        return (
+            <Container>
+                <h1>LOGIN</h1>
+                <input placeholder="User"></input>
+                <input placeholder="password"></input>
+                <button type="submit">LOGIN</button>
 
-            <div className="container-flex">
-                <p><a href="/register" className="register-login">Register</a></p>
-                <p><a href="/forgot" className="forgot-login">Forgot</a></p>
-                <p><a href="/api" className="forgot-login">Api</a></p>
-            </div>
-        </div>
-    )
+                <ContainerFlex>
+                    <p><a href="/register">Register</a></p>
+                    <p><a href="/forgot">Forgot</a></p>
+                    <p><a href="/api">Api</a></p>
+                </ContainerFlex>
+            </Container>
+        )
+    }
 }
+
+
+export default Login

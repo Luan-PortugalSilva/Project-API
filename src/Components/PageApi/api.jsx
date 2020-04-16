@@ -1,19 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-import '../PageApi/api.css'
+import {Container, ContainerFlex} from  '../../Styles/pageapi.jsx'
 
-export default Api => {
-    return (
-        <div className="container">
-            <h1>LOGIN WITH: </h1>
-            <button type="submit" className="buttom-login">Facebook</button>
-            <button type="submit" className="buttom-login">Google</button>
+class Api extends Component {
+    render() {
+        return (
+            <Container>
+                <h1>LOGIN WITH: </h1>
+                <button type="submit">Facebook</button>
+                <button type="submit">Google</button>
 
-            <div className="container-flex">
-                <p><a href="/register" className="register-login">Register</a></p>
-                <p><a href="/forgot" className="forgot-login">Forgot</a></p>
-                <p><a href="/api" className="forgot-login">Api</a></p>
-            </div>
-        </div>
-    )
+                <ContainerFlex>
+                    <p><a href="/register">Register</a></p>
+                    <p><a href="/forgot">Forgot</a></p>
+                    <p><a href="/api">Api</a></p>
+                </ContainerFlex>
+            </Container>
+        )
+    }
 }
+
+export default Api
