@@ -37,7 +37,6 @@ export default class Login extends Component {
                 <ContainerFlex>
                     <p><a href="/register">Register</a></p>
                     <p><a href="/forgot">Forgot</a></p>
-                    <p><a href="/api">Api</a></p>
                 </ContainerFlex>
             </Container>
         )

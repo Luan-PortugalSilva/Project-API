@@ -8,7 +8,6 @@ import {
 import Login from '../Components/Login/login.jsx';
 import Register from '../Components/Register/register.jsx';
 import Forgot from '../Components/Forgot/forgot.jsx';
-import PageApi from '../Components/PageApi/api.jsx';
 import UsersList from '../Components/UsersList/UsersList.jsx';
 
 export default Routes => {
@@ -18,7 +17,6 @@ export default Routes => {
         <Route path="/" exact={true} component={ Login } />
         <Route path="/register" exact={true} component={ Register } />
         <Route path="/forgot" exact={true} component={ Forgot } />
-        <Route path="/api" exact={true} component={ PageApi } />
         <Route path="/users" exact={true} component={ UsersList } />
       </Switch>
     </Router>

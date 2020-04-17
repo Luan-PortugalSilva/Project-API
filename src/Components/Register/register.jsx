@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Container, ContainerFlex } from '../../Styles/register.jsx'
 import api from "../services/api";
+
+import { Container, ContainerFlex } from '../../Styles/register.jsx'
 
 export default class Register extends Component {
     state = {
