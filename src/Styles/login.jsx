@@ -10,12 +10,17 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   background-color: #540463;
+  h1 {
+    font-family: "Roboto", sans-serif;
+    color: #ffff
+  }
 
   input {
   width: 270px;
   height: 32px;
   margin-top: 18px;
   border-radius: 10px;
+  border: none;
   }
 
   button {

@@ -18,8 +18,16 @@ export default class Login extends Component {
     
         api.post('/auth/login/', { email, password })
           .then((result) => {
-                alert('Usuário logado com sucesso')
-          });
+            localStorage.setItem('token', result.data.token ) 
+              
+            //redireciona o usuário para o /users 
+            return window.location.href = "/users"
+          })
+          .catch((err) => {
+            alert('Usuário não cadastrado')
+            return console.log(err)
+          })
+          
           
       }
    
