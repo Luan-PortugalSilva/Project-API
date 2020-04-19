@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import api from "../services/api";
-
 import { Container } from '../../Styles/users.jsx'
 
 export default class UsersList extends Component {

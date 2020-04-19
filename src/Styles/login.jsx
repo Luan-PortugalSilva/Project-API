@@ -10,6 +10,10 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   background-color: #540463;
+  h1 {
+    font-family: "Roboto", sans-serif;
+    color: #ffff
+  }
 
   h1 {
     font-family: "roboto";
