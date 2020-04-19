@@ -11,11 +11,17 @@ export const Container = styled.div`
   justify-content: center;
   background-color: #540463;
 
+  h1 {
+    font-family: "roboto";
+    color: #Fafafa;
+  }
+
   input {
   width: 270px;
   height: 32px;
   margin-top: 18px;
   border-radius: 10px;
+  border: none;
   }
 
   button {
@@ -23,7 +29,7 @@ export const Container = styled.div`
   height: 44px;
   background: #FFEB39;
   border-radius: 5px;
-  font-family: "Roboto", sans-serif;
+  font-family: "roboto";
   font-weight: 700;
   font-size: 16px;
   margin-top: 25px;
