@@ -10,7 +10,9 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-
+  color:#ffff;
+  font-family:"Roboto", sans-serif;
+  
   h1 {
   font-family: "roboto";
   color: #FFF;
@@ -60,9 +62,13 @@ a:hover {
   color: #fff;
   text-decoration: none;
 }
-
+.erro{
+  font-size:300px;
+  color:#ffff
+}
 p {
   color: #fff;
   font-family: "roboto";
 }
+
 `

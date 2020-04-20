@@ -10,6 +10,7 @@ import Login from "../Components/Login/login.jsx";
 import Register from "../Components/Register/register.jsx";
 import Forgot from "../Components/Forgot/forgot.jsx";
 import UsersList from "../Components/UsersList/UsersList.jsx";
+import Form from "../Components/Form/form.js"
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -31,7 +32,7 @@ export default (Routes) => {
     <Router>
       <Switch>
         <Route path="/" exact={true} component={Login} />
-        <Route path="/register" exact={true} component={Register} />
+        <Route path="/register" exact={true} component={Form}  />
         <Route path="/forgot" exact={true} component={Forgot} />
         <PrivateRoute path="/users" exact component={UsersList} />
       </Switch>
